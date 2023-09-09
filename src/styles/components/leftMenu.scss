@@ -1,0 +1,38 @@
+.left-menu-container {
+  width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  background-color: #52a9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-t {
+    width: 100%;
+  }
+
+  &-b {
+    width: 100%;
+    height: 80px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    transition: all 300ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4592d3;
+    }
+
+    & span {
+      color: #fff;
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,295 @@
+#referrals-video {
+  width: 290px;
+  max-width: 90vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0px;
+  outline: none;
+}
+
+.index__container {
+  width: 100vw;
+  padding: 20px 14vw;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.index__container-middle {
+  background-color: #84d6ff;
+}
+.index__container-desktop {
+  margin-left: -80px;
+}
+.index__container-mobile {
+  display: none;
+}
+.index__container-QR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.index__container-QR-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  max-width: 250px;
+  text-align: center;
+}
+.index__container-QR-subtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.index__container-QR-img {
+  margin-top: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index__container-QR-links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+.index__container-QR-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.index__container-QR-links a img {
+  width: 150px;
+}
+.index__container-QR-links a .google {
+  width: 190px;
+  margin: 0 -20px;
+}
+.index__container-top {
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+.index__container-top-title {
+  font-size: 80px;
+  text-align: center;
+}
+.index__container-mid {
+  font-size: 18px;
+  font-weight: 500;
+}
+.index__container-mid-subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+.index__container-bottom {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.index__container__buttons {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index__container__buttons div {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-bottom: 25px;
+}
+.index__container__buttons div input {
+  margin-top: 10px;
+}
+.index__container__buttons div input:first-child {
+  margin-top: 0;
+}
+.index__container__phone__input, .index__container__phone__input div {
+  width: unset !important;
+  flex-direction: row !important;
+  margin-bottom: 0 !important;
+}
+.index__container__phone__input {
+  width: 100% !important;
+  border-radius: 10px;
+  border: 1px solid #d0ebfd;
+  background-color: #fff;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.index__container__phone__input .PhoneInputCountry > select {
+  border-radius: 3rem;
+}
+.index__container__phone__input .PhoneInputCountry > select > option {
+  font-size: 1.2rem;
+  font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  min-height: 0.5rem;
+}
+.index__container__phone__input .PhoneInputCountrySelectArrow {
+  width: var(--PhoneInputCountrySelectArrow-width) !important;
+}
+.index__container__phone__input input {
+  margin: 0 !important;
+  border: none !important;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.main-layout {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media screen and (max-width: 1004px) {
+  .index__container {
+    gap: 80px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1004px) and (max-width: 850px) {
+  .layout-nav img {
+    height: 8vw;
+    max-height: 40px;
+  }
+  .step-inside-button {
+    font-weight: 600 !important;
+  }
+  .layout-nav-mobile {
+    padding-left: 5vw;
+  }
+  .layout-nav__logo {
+    height: 2rem !important;
+  }
+  .layout__footer {
+    margin-top: 40px;
+  }
+  .layout__footer-container {
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    background-image: none;
+    gap: 0;
+  }
+  .layout__footer-container-l {
+    justify-content: center;
+    align-items: center;
+  }
+  .layout__footer-container-m {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .layout__footer-container-r {
+    justify-content: center;
+    align-items: center;
+  }
+  .layout__footer-container-media {
+    transform: translateY(-140px);
+  }
+  .layout__footer-container-legal {
+    transform: translateY(-70px);
+  }
+  .index__container {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .index__container-middle {
+    background-color: #84d6ff;
+    padding: 20px;
+  }
+  .index__container-desktop {
+    display: none;
+  }
+  .index__container-mobile {
+    display: flex;
+  }
+  .index__container-top {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 900;
+  }
+  .index__container-top-title {
+    font-size: 34px;
+    text-align: center;
+  }
+  .index__container-mid {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .index__container-mid-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .index__container-bottom {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  .index__container-QR {
+    align-items: center;
+    flex-direction: column;
+  }
+  .index__container__buttons {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .index__container__buttons div {
+    width: 90vw;
+    max-width: 350px;
+  }
+  .index__container__buttons div input {
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-align: center !important;
+  }
+  h2 {
+    text-align: center !important;
+  }
+  h3 {
+    text-align: center !important;
+  }
+  h4 {
+    text-align: center !important;
+  }
+  h5 {
+    text-align: center !important;
+  }
+  h6 {
+    text-align: center !important;
+  }
+  p {
+    text-align: center !important;
+  }
+  span {
+    text-align: center !important;
+  }
+}
+.modal-success {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=index.css.map */

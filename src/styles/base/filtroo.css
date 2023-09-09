@@ -1,0 +1,49 @@
+.filtroo-principal-button {
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f2c952;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  min-width: 160px;
+  outline: none;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
+}
+.filtroo-principal-button-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.filtroo-principal-button span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  pointer-events: none;
+}
+.filtroo-principal-button::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #f2da52, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.filtroo-principal-button:hover::before {
+  --size: 250px;
+}
+.filtroo-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d0ebfd;
+  background-color: #fff;
+  padding-left: 20px;
+  height: 44px;
+  outline: none;
+}/*# sourceMappingURL=filtroo.css.map */

@@ -1,0 +1,31 @@
+@import "./styles/base/button.css";
+@import url("https://fonts.google.com/specimen/Poppins?query=poppins");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  transition: all 200ms !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}

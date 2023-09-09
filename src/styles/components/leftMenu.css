@@ -1,0 +1,34 @@
+.left-menu-container {
+  width: 100px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  background-color: #52a9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.left-menu-container-t {
+  width: 100%;
+}
+.left-menu-container-b {
+  width: 100%;
+  height: 80px;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.left-menu-container-b:hover {
+  background-color: #4592d3;
+}
+.left-menu-container-b span {
+  color: #fff;
+  margin-top: 5px;
+}/*# sourceMappingURL=leftMenu.css.map */
