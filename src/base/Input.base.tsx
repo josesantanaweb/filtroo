@@ -1,4 +1,3 @@
-import { Select } from "antd";
 import React from "react";
 import "../styles/base/input.scss";
 
