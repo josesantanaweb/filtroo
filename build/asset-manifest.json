@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f84b84a6.css",
+    "main.js": "/static/js/main.7689f934.js",
+    "static/media/appstore.png": "/static/media/appstore.4f5846e927b533fd5535.png",
+    "static/media/Isotipo_Azul.png": "/static/media/Isotipo_Azul.2636cd48bf92e4f8605f.png",
+    "static/media/googleplay.png": "/static/media/googleplay.9cd0c144db2bf5fc0c27.png",
+    "static/media/appstore.svg": "/static/media/appstore.8c4986ee4828b47d16f5cd694ef065f2.svg",
+    "static/media/onelinkto_cef3xk_svg.svg": "/static/media/onelinkto_cef3xk_svg.24656fe97c5593d255dfee28fe7f1fdd.svg",
+    "static/media/googleplay.svg": "/static/media/googleplay.d6b130530c911c4df3ce88c6ebd33660.svg",
+    "index.html": "/index.html",
+    "main.f84b84a6.css.map": "/static/css/main.f84b84a6.css.map",
+    "main.7689f934.js.map": "/static/js/main.7689f934.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f84b84a6.css",
+    "static/js/main.7689f934.js"
+  ]
+}
