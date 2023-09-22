@@ -17,13 +17,14 @@ import { isPossiblePhoneNumber } from "react-phone-number-input";
 import google from "../assets/googleplay.svg";
 import apple from "../assets/appstore.svg";
 import flyIcon from "../assets/fly-icon.png";
-import statisticsIcon from "../assets/statistics-icon.png";
+import arrowIcon from "../assets/arrow.png";
 import vaultIcon from "../assets/vault-icon.png";
 import arrowsIcon from "../assets/arrows-icon.png";
 import QR from "../assets/onelinkto_cef3xk_svg.svg";
 import { set } from "store";
 import { isMobile } from "react-device-detect";
 import { motion } from "framer-motion";
+import QAItem from "../components/QAItem";
 
 export default function Join() {
   const ref = useRef<any>();
@@ -40,12 +41,33 @@ export default function Join() {
   };
   const [download, setDownload] = useState(false);
 
+  const qaData = [
+    {
+      id: 1,
+      title: "How long does it take for the reward to reflect in my account?",
+      description:
+        "As soon as your friend registers, both of you get the reward instantly!",
+    },
+    {
+      id: 2,
+      title: "Is there a limit to how many friends I can refer?",
+      description: "No limits! The more you refer, the more you earn.",
+    },
+    {
+      id: 3,
+      title: " Can I redeem my points for cash?",
+      description:
+        "Points can be redeemed for discounts & coupons from 10,000 global brands.",
+    },
+  ];
+
   const [state, setState] = useState({
     // email: "",
     // username: "",
     code: "",
     phone: "",
   });
+  const [active, setActive] = useState(0);
 
   // useEffect(() => {
   //   if (searchParams.get("v")) {
@@ -106,6 +128,14 @@ export default function Join() {
         setLoading(false);
         validationRef.current.close();
       });
+  };
+
+  const handleOpenQa = (index: number) => {
+    if (active === index) {
+      setActive(0);
+    } else {
+      setActive(index);
+    }
   };
 
   return (
@@ -317,35 +347,31 @@ export default function Join() {
                 </p>
               </motion.div>
             </motion.div>
-            {/* <motion.div
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0, transition: { duration: 1 } }}
-              variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+          </div>
+        </section>
+        <section className="index__container-section">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0, transition: { duration: 1 } }}
+            variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+            className="index__container-section"
+          >
+            <motion.h1
+              variants={{
+                hidden: { opacity: 0, y: -20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+              }}
+              style={{ top: "-18vw" } as any}
+              className="index__container-subtitle"
             >
-              <motion.div
-                variants={{
-                  hidden: { opacity: 0, x: 20 },
-                  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-                }}
-                className="index__items-card"
-              >
-                <img
-                  src={arrowsIcon}
-                  alt="arrowsIcon"
-                  className="index__items-icon"
-                />
-                <h6 className="index__items-title">
-                  Send & request money globally
-                </h6>
-                <p className="index__items-text">
-                  Banks will charge you when you transfer money abroad. We're
-                  not about that! Instantly send and request money from your
-                  friends in Europe, U.S. and Australia at the touch of a
-                  button, and use GIFs to make things a little more interesting.{" "}
-                </p>
-              </motion.div>
-            </motion.div> */}
+              Our most frequently asked questions
+            </motion.h1>
+          </motion.div>
+          <div className="index__faq">
+            {qaData.map((item, index) => (
+              <QAItem item={item} handleOpenQa={handleOpenQa} active={active} key={index} />
+            ))}
           </div>
         </section>
       </div>
