@@ -239,7 +239,7 @@ export default function Join() {
               animate="visible"
               exit={{ opacity: 0, transition: { duration: 1 } }}
               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-              style={{ flex: 1 }}
+              className="index__items-item"
             >
               <motion.div
                 variants={{
@@ -247,7 +247,6 @@ export default function Join() {
                   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
                 }}
                 className="index__items-card"
-                style={{ flex: 1 }}
               >
                 <img
                   src={flyIcon}
@@ -267,7 +266,7 @@ export default function Join() {
               animate="visible"
               exit={{ opacity: 0, transition: { duration: 1 } }}
               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-              style={{ flex: 1 }}
+              className="index__items-item"
             >
               <motion.div
                 variants={{
