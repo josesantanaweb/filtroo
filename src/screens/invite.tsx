@@ -100,6 +100,7 @@ export default function Invite() {
         <div className="invite__container__body-t">
           <h2 style={{ marginBottom: 30 }}>
             Invite your friends and earn up to €100 in rewards.
+            Invite Friends To Filtroo & Earn $10 Each!
           </h2>
           <p>
             Share your unique link via email, Whatsapp or social media and earn

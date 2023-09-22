@@ -134,13 +134,11 @@ export default function Join() {
                 style={{ fontWeight: 700 }}
                 className="index__container-top-title"
               >
-                You were invited to
-                <span style={{ fontWeight: 700 }}> Filtroo</span>
+                Invite Friends To Filtroo & Earn $10 Each!
               </h1>
 
               <p className="index__container-mid-subtitle">
-                Join, invite your friends, and start earning $1 or more for
-                every TikTok video you share!
+                Joining Filtroo's Referral Program is quick and easy.
               </p>
             </motion.div>
           </motion.div>
@@ -232,7 +230,7 @@ export default function Join() {
               style={{ top: "-18vw" } as any}
               className="index__container-subtitle"
             >
-              Here’s why 30+ million people recommend Filtroo
+              Invite your friends and start earning rewards today!
             </motion.h1>
           </motion.div>
           <div className="index__items">
@@ -241,6 +239,7 @@ export default function Join() {
               animate="visible"
               exit={{ opacity: 0, transition: { duration: 1 } }}
               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+              style={{ flex: 1 }}
             >
               <motion.div
                 variants={{
@@ -248,18 +247,18 @@ export default function Join() {
                   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
                 }}
                 className="index__items-card"
+                style={{ flex: 1 }}
               >
                 <img
                   src={flyIcon}
                   alt="flyIcon"
                   className="index__items-icon"
                 />
-                <h6 className="index__items-title">
-                  Travel without hidden fees
-                </h6>
+                <h6 className="index__items-title">Earn $10 Now!</h6>
                 <p className="index__items-text">
-                  We don’t believe in financial borders, so it’s only fair that
-                  we let you spend abroad in over 150 currencies with the{" "}
+                  Invite friends using your exclusive referral link. When they
+                  register, both of you get 100 points ($10)! Unlock rewards
+                  together!
                 </p>
               </motion.div>
             </motion.div>
@@ -268,6 +267,7 @@ export default function Join() {
               animate="visible"
               exit={{ opacity: 0, transition: { duration: 1 } }}
               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+              style={{ flex: 1 }}
             >
               <motion.div
                 variants={{
@@ -277,17 +277,16 @@ export default function Join() {
                 className="index__items-card"
               >
                 <img
-                  src={statisticsIcon}
+                  src={arrowsIcon}
                   alt="statisticsIcon"
                   className="index__items-icon"
                 />
                 <h6 className="index__items-title">
-                  Stay on top of your expenses
+                  Share and Earn on TikTok!
                 </h6>
                 <p className="index__items-text">
-                  We’ll show you exactly where your money is going each month,
-                  and even let you set up monthly budgets for things like
-                  restaurants and groceries.{" "}
+                  For every friend who joins and shares TikTok videos, you earn
+                  an additional 100 points ($10). Keep inviting, keep earning!
                 </p>
               </motion.div>
             </motion.div>
@@ -309,15 +308,17 @@ export default function Join() {
                   alt="vaultIcon"
                   className="index__items-icon"
                 />
-                <h6 className="index__items-title">Save when you spend</h6>
+                <h6 className="index__items-title">
+                  Join a Community of Creativity and Fun!
+                </h6>
                 <p className="index__items-text">
-                  Round up every card payment to the nearest whole number, and
-                  we'll stash your spare change away for you to put towards your
-                  goals{" "}
+                  Filtroo is more than just rewards; it's a creative community.
+                  Explore a world of fun and endless possibilities with AR
+                  filters. Join the Most Creative Community today!
                 </p>
               </motion.div>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial="hidden"
               animate="visible"
               exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -345,7 +346,7 @@ export default function Join() {
                   button, and use GIFs to make things a little more interesting.{" "}
                 </p>
               </motion.div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </section>
       </div>
