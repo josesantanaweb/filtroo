@@ -15,7 +15,7 @@ const QAItem = ({ item, handleOpenQa, active }: PhoneInputProps) => {
         className="index__faq-item__header"
         onClick={() => handleOpenQa(item?.id)}
       >
-        <span>{item.title}</span>
+        <div>{item.title}</div>
         <img
           src={arrowIcon}
           alt="arrow"

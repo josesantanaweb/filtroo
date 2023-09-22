@@ -384,11 +384,8 @@
 
       &__faq-item {
         &__header {
-          span {
-            width: 250px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+          div {
+            font-size: 14px;
           }
         }
       }
