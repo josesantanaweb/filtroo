@@ -115,6 +115,7 @@
       margin-bottom: 30px;
       justify-content: space-between;
       align-items: center;
+      position: relative;
       padding: 35px;
       height: 80px;
       & .layout-nav__logo {
@@ -269,5 +270,91 @@
   //     }
   //   }
   // }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    &:first-child {
+      margin-left: 5rem;
+    }
+    li {
+      list-style: none;
+      padding: 0;
+      a {
+        font-size: 14px !important;
+        cursor: pointer;
+        &:hover {
+          color: #00AAFF;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 40px;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    background-color: #00AAFF;
+    cursor: pointer;
+  }
+}
+
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  padding: 20px 0;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+      list-style: none;
+      padding: 0 !important;
+      width: 100%;
+      text-align: center;
+      a {
+        font-size: 18px !important;
+        padding: 15px;
+        cursor: pointer;
+        display: block;
+        &:hover {
+          color: #00AAFF;
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -57px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
 }
 

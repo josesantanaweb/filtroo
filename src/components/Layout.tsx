@@ -6,6 +6,8 @@ import Gold from "../assets/gold.png";
 import PrincipalButton from "../base/PrincipalButton.base";
 import "../styles/components/layout.scss";
 import Footer from "./Footer";
+import Menu from "./Menu";
+import MenuMobile from "./MenuMobile";
 
 export default function Layout() {
   const [links] = useState([
@@ -33,11 +35,13 @@ export default function Layout() {
         <a href="https://filtroo.co/">
           <img src={Logo} className="layout-nav__logo" />
         </a>
+        <MenuMobile />
       </nav>
       <nav className="layout-nav">
         <a href="https://filtroo.co/">
           <img src={Logo} className="layout-nav__logo" />
         </a>
+        <Menu />
       </nav>
       <main className="main-layout">
         <Outlet />
