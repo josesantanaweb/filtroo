@@ -231,6 +231,10 @@
       cursor: pointer;
       padding: 10px 20px;
       font-weight: 600;
+
+      svg {
+        color: #bdbdbd;
+      }
     }
 
     &__body {

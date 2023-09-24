@@ -25,15 +25,15 @@ export default function Footer() {
         <div className="layout__footer-download">
           <a href="#">
             <img
-              src={google}
-              alt="googleplay"
+              src={appstore}
+              alt="appstore"
               className="layout__footer-download__logo"
             />
           </a>
           <a href="#">
             <img
-              src={appstore}
-              alt="appstore"
+              src={google}
+              alt="googleplay"
               className="layout__footer-download__logo"
             />
           </a>

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import arrowIcon from "../assets/arrow.png";
+import { FaArrowUpLong, FaArrowDownLong } from "react-icons/fa6";
 
 interface PhoneInputProps {
   item: any;
@@ -16,12 +17,10 @@ const QAItem = ({ item, handleOpenQa, active }: PhoneInputProps) => {
         onClick={() => handleOpenQa(item?.id)}
       >
         <div>{item.title}</div>
-        <img
-          src={arrowIcon}
-          alt="arrow"
-          width={16}
-          style={{ transform: active === item?.id ? "rotate(178deg)" : "" }}
-        />
+        {
+          active === item?.id ? <FaArrowUpLong /> : <FaArrowDownLong />
+        }
+        
       </div>
       <div
         ref={contentEl}

@@ -1,38 +1,85 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
-const Menu = () => {
+interface MenuProps {
+  setOpenProduct: any;
+  setOpenResources: any;
+  openProduct: boolean;
+  openResources: boolean;
+}
+const Menu = ({
+  setOpenProduct,
+  openProduct,
+  openResources,
+  setOpenResources,
+}: MenuProps) => {
+  const [activeItem, setActiveItem] = useState(1);
+
+  const handleProducts = () => {
+    setOpenProduct(!openProduct);
+    setOpenResources(false);
+  };
+
+  const handleResources = () => {
+    setOpenResources(!openResources);
+    setOpenProduct(false);
+  };
+
   return (
     <div className="menu">
-      <ul className="menu__item">
+      <ul className="menu__item menu__main">
         <li>
-          <a href="#">Personal</a>
+          <a
+            href="#"
+            onClick={() => setActiveItem(1)}
+            className={activeItem === 1 ? "active" : ""}
+          >
+            Personal
+          </a>
         </li>
         <li>
-          <a href="#">Enterprise</a>
+          <a
+            href="#"
+            onClick={() => setActiveItem(2)}
+            className={activeItem === 2 ? "active" : ""}
+          >
+            Enterprise
+          </a>
         </li>
       </ul>
       <ul className="menu__item">
         <li>
-          <a href="#">Products</a>
+          <a href="#" onClick={handleProducts}>
+            Product{" "}
+            {openProduct ? (
+              <FaChevronUp size={10} />
+            ) : (
+              <FaChevronDown size={10} />
+            )}
+          </a>
         </li>
         <li>
-          <a href="#">Solutions</a>
+          <a href="#" onClick={handleResources}>
+            Resources{" "}
+            {openResources ? (
+              <FaChevronUp size={10} />
+            ) : (
+              <FaChevronDown size={10} />
+            )}
+          </a>
         </li>
         <li>
-          <a href="#">Resources</a>
+          <a href="#">App</a>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <a href="https://referrals.filtroo.co">Referrals</a>
         </li>
         <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <button className="menu__button">Join Filltroo</button>
+          <button className="menu__button">Download App</button>
         </li>
       </ul>
     </div>
   );
-}
+};
 
 export default Menu
