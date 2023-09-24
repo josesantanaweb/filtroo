@@ -38,6 +38,50 @@ export default function Footer() {
             />
           </a>
         </div>
+        <div className="layout__footer-nav">
+          <ul>
+            <li>
+              <span>Personal</span>
+            </li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">App</a>
+            </li>
+            <li>
+              <a href="#">Referrals</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>Products</span>
+            </li>
+            <li>
+              <a href="#">App</a>
+            </li>
+            <li>
+              <a href="#">Rewards</a>
+            </li>
+            <li>
+              <a href="#">AR Filters</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>Resources</span>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Referrals</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
